@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quantity</title>
+
+    
+  </head>
+  <body>
+    
+    <button onclick="
+      console.log(`Cart quantity: ${caqu}`);
+      ">
+      Show Quantity
+    </button>
+    <button onclick="
+      cartqu(1);
+      ">
+      Add to cart
+    </button>
+
+    <button onclick="
+     cartqu(2);
+     ">+2</button> 
+
+    <button onclick="
+     cartqu(3);
+    ">+3</button>
+
+    <button onclick="
+     cartqu(0);
+    ">Reset Cart</button>
+
+    <button onclick="
+      cartqu(4);
+    ">
+      +4
+    </button>
+
+    <button onclick="
+      cartqu(-1);
+    ">
+      Remove from cart
+    </button>
+
+    <script>
+      let caqu = 0;
+      
+      function cartqu(num){
+        console.log(num);
+        //xoa het
+      if(num = 0){
+        caqu=0;
+        console.log(caqu);
+        console.log('hh');
+      }
+      //cong so
+      else{
+        //kiem tra
+        if (caqu+num>10){
+          console.log('cart is full');
+          }
+        else if(caqu+num<0){
+          console.log('cart is empty');
+        }
+        //cong vao
+        else{
+          console.log(num);
+          console.log(caqu);
+          caqu =caqu + num;
+          console.log(caqu);
+      
+          }
+        }
+      
+        
+      }
+      
+    </script>
+
+  </body>
+</html>
+
+
+
+
